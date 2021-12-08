@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Unofficial.MVVMCross.Plugin.Network</id>
+    <version>8.0.2</version>
+    <title>MVVM Cross Plugin Network</title>
+    <authors>Abdul Rauf</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/imabdul-dev/MVVMCross.Plugin.Network</projectUrl>
+    <icon>icon.png</icon>
+    <description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Xamarin Forms, Windows and Mac. This package contains the 'network' plugin for MvvmCross.
+This plugin supports MVVM minimum version 8.0.2.</description>
+    <summary>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Xamarin Forms, Windows and Mac. This package contains the 'network' plugin for MvvmCross.
+This plugin supports MVVM minimum version 8.0.2.</summary>
+    <releaseNotes>MVVM Cross Network Plugin, currently supports only iOS and Android.</releaseNotes>
+    <tags>abdul MvvmCross mvvm xamarin xamarinforms xamarin.android xamarin.ios mvvm android ios network mvvmcross.plugin.network Abdul.MVVMCross.Plugin.network</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="MVVMCross" version="8.0.2" />
+      </group>
+    </dependencies>
+  </metadata>
+      <files>
+        <file src="icon.png" target="" />
+    </files>
+</package>

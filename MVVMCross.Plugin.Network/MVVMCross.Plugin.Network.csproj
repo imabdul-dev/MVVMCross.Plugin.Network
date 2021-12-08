@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageVersion>8.0.2</PackageVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MvvmCross" Version="8.0.2" />
+    <PackageReference Include="Unofficial.MVVMCross.Plugin.File" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Unofficial.MVVMCross.Plugin.File" />
+    <None Remove="MvvmCross.Plugin.File.nuspec" />
+    <None Remove="MVVMCross.Plugin.Network.1.0.0.nupkg" />
+  </ItemGroup>
+</Project>
