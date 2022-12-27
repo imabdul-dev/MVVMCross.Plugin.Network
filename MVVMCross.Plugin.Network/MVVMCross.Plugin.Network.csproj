@@ -1,18 +1,49 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <PackageVersion>8.0.2</PackageVersion>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<PackOnBuild>true</PackOnBuild>
+		<PackageVersion>9.0.2</PackageVersion>
+		<NeutralLanguage>en</NeutralLanguage>
+		<Configurations>Release;Debug</Configurations>
+		<PackageId>Unofficial.MVVMCross.Plugin.Network</PackageId>
+		<Authors>Abdul Rauf</Authors>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Description>
+			MvvmCross is the .NET MVVM framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Xamarin Forms, Windows and Mac. This package contains the 'Network' plugin for MvvmCross.
+			This plugin supports MVVM minimum version 9.0.2.
+		</Description>
+		<IsPublishable>True</IsPublishable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Unofficial MVVM Cross Network Plugin</Title>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageProjectUrl>https://www.mvvmcross.com/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/imabdul-dev/MVVMCross.Plugin.Network</RepositoryUrl>
+		<PackageTags>mvvmcross; mvvm cross; mvvm cross plugin; mvvm cross network; mvvm cross network plugin; mvvm; network plugin; mvvmcross network; mvvmcross network plugin; xamarin; android; ios; mac</PackageTags>
+		<PackageReleaseNotes>Updated to .net 6 and MVVM Cross 9.0.2</PackageReleaseNotes>
+		<AssemblyVersion>9.0.2</AssemblyVersion>
+		<NetworkVersion>9.0.2</NetworkVersion>
+		<Version>$(VersionPrefix) 9.0.2</Version>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="MvvmCross" Version="8.0.2" />
-    <PackageReference Include="Unofficial.MVVMCross.Plugin.File" Version="8.0.2" />
-  </ItemGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugType></DebugType>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Unofficial.MVVMCross.Plugin.File" />
-    <None Remove="MvvmCross.Plugin.File.nuspec" />
-    <None Remove="MVVMCross.Plugin.Network.1.0.0.nupkg" />
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Remove="Platforms\**" />
+		<EmbeddedResource Remove="Platforms\**" />
+		<None Remove="Platforms\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MvvmCross" Version="9.0.2" />
+		<PackageReference Include="Unofficial.MVVMCross.Plugin.File" Version="9.0.2" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
 </Project>
